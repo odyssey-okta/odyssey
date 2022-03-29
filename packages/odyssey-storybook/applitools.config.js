@@ -20,20 +20,14 @@ module.exports = {
 
   matchLevel: "Strict",
   showStorybookOutput: true,
-  testConcurrency: 10,
+  testConcurrency: 20,
   browser: [{ width: 1024, height: 768, name: "chrome" }],
-  accessibilityRegions({ name }) {
-    if (/^Box\.Too.+Contrast/.test(name)) {
-      return [
-        {
-          accessibilityType: "RegularText",
-          selector: "#storybook-preview-iframe",
-        },
-      ];
-    }
-
-    return [];
-  },
+  accessibilityRegions: [
+    {
+      accessibilityType: "RegularText",
+      selector: "#storybook-preview-iframe",
+    },
+  ],
   accessibilityValidation: {
     level: "AA",
     guidelinesVersion: "WCAG_2_1",
