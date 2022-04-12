@@ -54,7 +54,6 @@
     "react-dom": ">=16 <18"
   },
   "scripts": {
-    "start": "node ./scripts/start.cjs",
     "lint": "eslint .",
     "test": "jest",
     "typecheck": "tsc",
