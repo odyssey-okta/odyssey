@@ -6,10 +6,6 @@ import { ThemeTable } from "../../../.storybook/components";
 
 An infobox is a type of alert that provides feedback in response to a user action or system activity.
 
-## Anatomy
-
-**ANATOMY MISSING**
-
 ## Behavior
 
 This component may be present on load or triggered by different types of events, but they are not transient or dismissable.
@@ -62,11 +58,15 @@ Avoid overusing Infobox within the same view. They are intended to draw the eye,
 
 It is ideal to direct users toward an appropriate action, especially for addressing errors. Infoboxes allow for both inline and separated actions. To preserve clarity, limit Infoboxes to one link.
 
-**STORY MISSING**
+<Canvas>
+  <Story id="components-infobox--with-link-inline" />
+</Canvas>
 
 The actions section is limited to links. If it's necessary to provide the user with an action, please direct them to the appropriate flow instead of beginning a new process inline.
 
-**STORY MISSING**
+<Canvas>
+  <Story id="components-infobox--with-link" />
+</Canvas>
 
 ### Placement
 
@@ -74,19 +74,21 @@ Infoboxes should be displayed above the content they apply to but not higher tha
 
 For example, a Form error should be displayed above all Fieldsets, but below the Form title.
 
-**STORY MISSING**
+<Canvas>
+  <Story id="components-infobox--form-do" />
+</Canvas>
 
 Stay away from nesting Infoboxes within information-dense UI like Tables. If you need to convey something about an individual data point, consider another design solution.
 
-**STORY MISSING**
+<Canvas>
+  <Story id="components-infobox--table-dont" />
+</Canvas>
 
 ## Content Guidelines
 
 These messages may be used for longer content than Toast or Banner, but shouldn't go beyond two paragraphs. When including an inline link or action, be sure the link text clearly indicates where it leads.
 
 Do not include images or other UIs within Infobox.
-
-**STORY MISSING**
 
 ### Content Areas
 
