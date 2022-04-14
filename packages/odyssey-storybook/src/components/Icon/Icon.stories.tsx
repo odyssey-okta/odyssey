@@ -13,13 +13,12 @@
 import React from "react";
 import { Story } from "@storybook/react";
 import * as IconIndex from "@okta/odyssey-react/dist/components/Icon";
-import { Icon, Table } from "@okta/odyssey-react";
-import { Icon as Source } from "../../../../odyssey-react/src";
+import { Icon, Table } from "../../../../odyssey-react/src";
 import { ReactElement } from "react";
 
 export default {
   title: `Components/Icon`,
-  component: Source,
+  component: Icon,
 };
 
 const Template: Story = ({ ...args }) => (
